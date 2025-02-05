@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #402741;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #e2d3f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.controls input {
+    margin-right: 20px;
+    width: 60px;
+}
+
+.game-area {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-color: #ebced7;
+    border: 2px solid #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#projectile {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+}
+
+.target {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#score, #level, #timer {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+#timer {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #991a14; /* Red color for urgency */
+}
